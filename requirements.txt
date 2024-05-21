@@ -1,0 +1,7 @@
+Flask==3.0.3
+numpy==1.26.4
+paddlenlp==2.7.1
+paddlepaddle_gpu==2.6.0.post120
+pandas==1.5.3
+py2neo==2021.2.4
+tqdm==4.66.1

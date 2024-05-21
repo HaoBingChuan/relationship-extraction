@@ -1,0 +1,15 @@
+
+RABBIT_MQ_PORT = 55004
+RABBIT_MQ_IP = '127.0.0.1'
+
+REDIS_IP = '172.25.78.26'
+REDIS_PORT = 6379
+REDIS_PASSWORD = 'asdc_ml'
+
+NEO4J_URL = 'http://172.25.78.26:7474'
+NEO4J_USER = 'neo4j'
+NEO4J_PASSWORD = 'adsc_2023'
+NEO4J_DB = 'neo4j'
+
+ARCHIVES_CATE = ['新闻', '公函']
+SECRET_LEVEL = ['绝密', '机密', '秘密']
