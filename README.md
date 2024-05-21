@@ -2,27 +2,29 @@
 
  **目录**
 
-- [1. 模型简介](#模型简介)
-- [2. 应用示例](#应用示例)
-- [3. 开箱即用](#开箱即用)
-  - [3.1 实体抽取](#实体抽取)
-  - [3.2 关系抽取](#关系抽取)
-  - [3.3 事件抽取](#事件抽取)
-  - [3.4 评论观点抽取](#评论观点抽取)
-  - [3.5 情感分类](#情感分类)
-  - [3.6 跨任务抽取](#跨任务抽取)
-  - [3.7 模型选择](#模型选择)
-  - [3.8 更多配置](#更多配置)
-- [4. 训练定制](#训练定制)
-  - [4.1 代码结构](#代码结构)
-  - [4.2 数据标注](#数据标注)
-  - [4.3 模型微调](#模型微调)
-  - [4.4 模型评估](#模型评估)
-  - [4.5 定制模型一键预测](#定制模型一键预测)
-  - [4.6 模型快速服务化部署](#模型快速服务化部署)
-  - [4.7 实验指标](#实验指标)
-  - [4.8 模型部署](#模型部署)
-- [5. CCKS比赛](#CCKS比赛)
+- [通用信息抽取 UIE(Universal Information Extraction)](#通用信息抽取-uieuniversal-information-extraction)
+  - [1. 模型简介](#1-模型简介)
+      - [News 📢: UIE-X 🧾](#news--uie-x-)
+      - [UIE的优势](#uie的优势)
+  - [2. 应用示例](#2-应用示例)
+  - [3. 开箱即用](#3-开箱即用)
+      - [3.1 实体抽取](#31-实体抽取)
+      - [3.2 关系抽取](#32-关系抽取)
+      - [3.3 事件抽取](#33-事件抽取)
+      - [3.4 评论观点抽取](#34-评论观点抽取)
+      - [3.5 情感分类](#35-情感分类)
+      - [3.6 跨任务抽取](#36-跨任务抽取)
+      - [3.7 模型选择](#37-模型选择)
+      - [3.8 更多配置](#38-更多配置)
+  - [4. 训练定制](#4-训练定制)
+      - [4.1 代码结构](#41-代码结构)
+      - [4.2 数据标注](#42-数据标注)
+      - [4.3 模型微调](#43-模型微调)
+      - [4.4 模型评估](#44-模型评估)
+      - [4.5 定制模型一键预测](#45-定制模型一键预测)
+      - [4.6 模型快速服务化部署](#46-模型快速服务化部署)
+      - [4.7 实验指标](#47-实验指标)
+      - [4.8 模型部署](#48-模型部署)
 
 <a name="模型简介"></a>
 
@@ -938,17 +940,3 @@ python deploy/python/infer.py --model_dir ./checkpoint/model_best --device gpu -
 ```
 
 更多细节请参考[UIE Python 部署方法](./deploy/python/README.md)
-
-<a name="CCKS比赛"></a>
-
-## 5.CCKS比赛
-
-为了进一步探索通用信息抽取的边界，我们举办了**CCKS 2022 千言通用信息抽取竞赛评测**（2022/03/30 - 2022/07/31）。
-
-- [报名链接](https://aistudio.baidu.com/aistudio/competition/detail/161/0/introduction)
-- [基线代码](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/examples/information_extraction/DuUIE)
-
-## References
-- **[Unified Structure Generation for Universal Information Extraction](https://arxiv.org/pdf/2203.12277.pdf)**
-- **[Quantizing deep convolutional networks for efficient inference: A whitepaper](https://arxiv.org/pdf/1806.08342.pdf)**
-- **[PACT: Parameterized Clipping Activation for Quantized Neural Networks](https://arxiv.org/abs/1805.06085)**

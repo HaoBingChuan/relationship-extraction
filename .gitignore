@@ -123,3 +123,4 @@ dmypy.json
 data/*
 checkpoint/*
 logs/*
+neo4j/logs/
