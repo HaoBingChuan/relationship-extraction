@@ -39,6 +39,7 @@ def get_result():
     text = request.json["text"]
     logger.info("Input text = {}".format(text))
     result = task(text)
+    logger.info("Input result = {}".format(result))
     formatted_result = parse(result)
     return jsonify(formatted_result)
 
